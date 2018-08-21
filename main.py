@@ -6,10 +6,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def receive():
-    bindata = request.data
-    print(bindata)
-
-    data = json.loads(bindata)
-    print(data)
+    print(request.args)
 
     return 200
