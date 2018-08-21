@@ -8,3 +8,8 @@ app = Flask(__name__)
 def receive():
     bindata = request.data
     print(bindata)
+
+    data = json.loads(bindata)
+    print(data)
+
+    return 200
