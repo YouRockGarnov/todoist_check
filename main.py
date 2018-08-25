@@ -9,6 +9,7 @@ def receive():
     print(request.args)
 
     import json
+    import requests
 
     r = (requests.post('https://todoist.com/oauth/access_token', {"client_id": "fb26051eb06649bb968791f3d7c2f185",
                                                              "client_secret": "f912232a8fe14128a74bb36577aa6a6f",
