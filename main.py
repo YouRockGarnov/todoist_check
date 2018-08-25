@@ -17,9 +17,10 @@ def receive():
                                                              "code": request.args["code"]}))
 
     obj = json.loads(r.content)
+    print(obj)
     # print(requests.get("https://beta.todoist.com/API/v8/projects",
     #                    headers={"Authorization": "Bearer %s" % obj['access_token']}).json())
 
-    print(todoist.login_with_google('garnovyd@gmail.com', obj['access_token']))
+    # print(todoist.login_with_google('garnovyd@gmail.com', obj['access_token']))
     
     return 200
