@@ -23,4 +23,4 @@ def receive():
 
     # print(todoist.login_with_google('garnovyd@gmail.com', obj['access_token']))
     
-    return 200
+    return '200'
